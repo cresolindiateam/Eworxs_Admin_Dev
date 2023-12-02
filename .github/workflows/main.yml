@@ -25,10 +25,10 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           if: "github.event_name == 'push' && github.ref == 'refs/heads/dev'"
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.DEV_ADMIN_FTP_SERVER }}
+          username: ${{ secrets.DEV_ADMIN_FTP_USER }}
+          password: ${{ secrets.DEV_ADMIN_FTP_PASSWORD }}
           local-dir: ./  # If your whole repo should be uploaded
-          server-dir: /dev/  # Your FTP path
+          server-dir: /devadmin/  # Your FTP path
 
  
