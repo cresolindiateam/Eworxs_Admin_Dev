@@ -2,9 +2,9 @@
 <?php
 function db_connect(){
   $server = 'localhost'; // this may be an ip address instead
-  $user = 'eworxs';
-  $pass = 'Dgoud123!@#';
-  $database = 'EworxsDB'; // name of your database
+  $user = 'deveworxs';
+  $pass = 'nx]~0-(BGJ{^';
+  $database = 'EworxsDevDB'; // name of your database
       // Create connection
     $conn= mysqli_connect($server,$user,$pass,$database);
     
