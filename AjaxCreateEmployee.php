@@ -31,6 +31,17 @@ if($exeEmail->num_rows>0){
 	$message="Phone already used.";
 }else{ 
 	$sqlInsert = "INSERT INTO workers(company_id,first_name,last_name,email,phone,password,local_address,permanent_address,postal_code,status,created_at,work_rate,mileage_rate,latitude, longitude)"." VALUES('$company','$first_name','$last_name','$email','$phone','$password','$local_address','$permanent_address','$postal_code',1,now(),'$workRate','$mileageRate','$latitude','$longitude')";
+
+if($db)
+{
+	echo "hello";
+}
+else
+{
+	echo "hello not";
+}
+
+	echo $sqlInsert;die;
 	$exeInsert = $db->query($sqlInsert);
 	$last_id = $db->insert_id;
 	if(!empty($last_id)){
